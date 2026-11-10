@@ -18,15 +18,16 @@ A public-source, evidence-led observatory for tracking material risks to U.S. na
 5. International developments only where a documented connection to U.S. or Ohio risk exists.
 
 ## Repository map
-- [Methodology](docs/METHODOLOGY.md) � collection, verification, confidence, and reporting rules.
-- [Collection pipeline](docs/COLLECTION_PIPELINE.md) � automated feed collection, validation, and safeguards.
-- [Evidence correlation](docs/EVIDENCE_CORRELATION.md) � candidate matching for human review; no automatic incident confirmation.
-- [Source registry](sources/SOURCE_REGISTRY.md) � prioritized official sources.
-- [Threat matrix](analysis/THREAT_MATRIX.md) � risk categories and assessment fields.
-- [Evidence ledger](evidence/EVIDENCE_LEDGER.md) � structured record of claims and evidence.
-- [Incident template](templates/INCIDENT_TEMPLATE.md) � repeatable incident documentation.
-- [Ohio monitoring](ohio/OHIO_MONITORING.md) � state and local source plan.
-- [Preparedness](preparedness/PREPAREDNESS.md) � practical, proportionate household guidance.
+- [Methodology](docs/METHODOLOGY.md) — collection, verification, confidence, and reporting rules.
+- [Collection pipeline](docs/COLLECTION_PIPELINE.md) — automated feed collection, validation, and safeguards.
+- [Evidence correlation](docs/EVIDENCE_CORRELATION.md) — candidate matching for human review; no automatic incident confirmation.
+- [Source registry](sources/SOURCE_REGISTRY.md) — prioritized official sources.
+- [Threat matrix](analysis/THREAT_MATRIX.md) — risk categories and assessment fields.
+- [Evidence ledger](evidence/EVIDENCE_LEDGER.md) — structured record of claims and evidence.
+- [Latest monitoring report](reports/2026-11-10-monitoring-baseline.md) — first verified public-source baseline.
+- [Incident template](templates/INCIDENT_TEMPLATE.md) — repeatable incident documentation.
+- [Ohio monitoring](ohio/OHIO_MONITORING.md) — state and local source plan.
+- [Preparedness](preparedness/PREPAREDNESS.md) — practical, proportionate household guidance.
 
 ## What this project is not
 - It is not a classified intelligence product or an assertion of access to non-public information.
