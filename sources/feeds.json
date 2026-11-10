@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "description": "Official public syndication feeds. Feed presence is not a threat assessment.",
+  "feeds": [
+    {
+      "id": "cisa_all_advisories",
+      "publisher": "Cybersecurity and Infrastructure Security Agency",
+      "title": "CISA Cybersecurity Advisories",
+      "url": "https://www.cisa.gov/cybersecurity-advisories/all.xml",
+      "scope": "Cybersecurity advisories, alerts, and bulletins",
+      "official_directory": "https://www.cisa.gov/news-events/cybersecurity-advisories",
+      "enabled": true
+    },
+    {
+      "id": "cisa_news",
+      "publisher": "Cybersecurity and Infrastructure Security Agency",
+      "title": "CISA News",
+      "url": "https://www.cisa.gov/news.xml",
+      "scope": "Agency announcements and news",
+      "official_directory": "https://www.cisa.gov/",
+      "enabled": true
+    },
+    {
+      "id": "fbi_national_press_releases",
+      "publisher": "Federal Bureau of Investigation",
+      "title": "FBI National Press Releases",
+      "url": "https://www.fbi.gov/feeds/national-press-releases/rss.xml",
+      "scope": "National FBI press releases",
+      "official_directory": "https://www.fbi.gov/feeds/national-press-releases",
+      "enabled": true
+    }
+  ]
+}
