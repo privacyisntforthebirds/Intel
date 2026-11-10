@@ -20,6 +20,16 @@ Each entry is stored as a source publication, not as a confirmed incident. The c
 
 Publication timestamps are retained separately from collection timestamps. Missing or malformed dates remain null; event dates are never invented.
 
+## Correlation review queue
+
+The optional script `scripts/correlate_evidence.py` compares publications in one snapshot and writes possible cross-publisher matches for human review:
+
+```bash
+python scripts/correlate_evidence.py data/collection/YYYY-MM-DD.json
+```
+
+It uses a 72-hour publication-time window and a conservative text-similarity threshold. It does not merge records, confirm a shared incident, establish independent corroboration, or assign a threat level. See [Evidence correlation](EVIDENCE_CORRELATION.md) for the matching rule and limitations.
+
 ## Reliability and safeguards
 
 - HTTPS requests only, with a bounded timeout and 5 MB response limit.
@@ -31,6 +41,7 @@ Publication timestamps are retained separately from collection timestamps. Missi
 - The workflow has repository-content write permission only and commits collection snapshots.
 - A feed failure is a collection gap, not evidence of an incident.
 - A new publication is not automatically an alert to the public.
+- Correlation candidates remain explicitly marked for human review.
 
 ## Operating limitations
 
