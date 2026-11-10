@@ -13,12 +13,18 @@ from email.utils import parsedate_to_datetime
 from hashlib import sha256
 from pathlib import Path
 
+if __package__:
+    from .validate_source_registry import validate_registry
+else:
+    from validate_source_registry import validate_registry
+
 ROOT = Path(__file__).resolve().parents[1]
 REGISTRY = ROOT / "sources" / "feeds.json"
 OUTPUT_DIR = ROOT / "data" / "collection"
 USER_AGENT = "PublicThreatIntelligenceObservatory/1.0 (+https://github.com/privacyisntforthebirds/Intel)"
 MAX_ENTRIES_PER_FEED = 25
 TIMEOUT_SECONDS = 25
+MAX_FEED_BYTES = 10_000_000
 
 
 def local_name(tag: str) -> str:
@@ -75,9 +81,9 @@ def fetch_feed(feed: dict) -> list[dict]:
         },
     )
     with urllib.request.urlopen(request, timeout=TIMEOUT_SECONDS) as response:
-        raw = response.read(5_000_001)
-        if len(raw) > 5_000_000:
-            raise ValueError("Feed exceeded 5 MB safety limit")
+        raw = response.read(MAX_FEED_BYTES + 1)
+        if len(raw) > MAX_FEED_BYTES:
+            raise ValueError("Feed exceeded 10 MB safety limit")
     root = ET.fromstring(raw)
     entries = [
         node for node in root.iter()
@@ -112,6 +118,7 @@ def fetch_feed(feed: dict) -> list[dict]:
 
 def main() -> int:
     registry = json.loads(REGISTRY.read_text(encoding="utf-8"))
+    validate_registry(registry)
     collected_at = datetime.now(timezone.utc)
     output = {
         "schema_version": 1,

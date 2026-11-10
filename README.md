@@ -19,6 +19,7 @@ A public-source, evidence-led observatory for tracking material risks to U.S. na
 
 ## Repository map
 - [Methodology](docs/METHODOLOGY.md) — collection, verification, confidence, and reporting rules.
+- [Collection pipeline](docs/COLLECTION_PIPELINE.md) — automated feed collection, validation, and safeguards.
 - [Evidence correlation](docs/EVIDENCE_CORRELATION.md) — candidate matching for human review; no automatic incident confirmation.
 - [Source registry](sources/SOURCE_REGISTRY.md) — prioritized official sources.
 - [Threat matrix](analysis/THREAT_MATRIX.md) — risk categories and assessment fields.
@@ -37,4 +38,4 @@ A public-source, evidence-led observatory for tracking material risks to U.S. na
 Every substantive assessment should state what happened; when it happened; when it was reported; who says so; what is independently corroborated; what remains unknown; confidence; relevance; and what would change the assessment.
 
 ## Status
-Repository foundation initialized. No threat level is implied by the existence of this project. Assessments will be added only when supported by cited evidence.
+Automated collection is limited to verified public feeds from CISA, FBI, and Grove City. ODNI, DOE, Ohio EMA, Ohio DPS, PUCO, Franklin County, and Columbus are manual-only; FEMA is pending interface verification. Other initial source candidates remain unreviewed. No threat level is implied by the existence of this project. Assessments will be added only when supported by cited evidence.

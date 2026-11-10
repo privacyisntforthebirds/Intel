@@ -1,32 +1,205 @@
 {
-  "schema_version": 1,
-  "description": "Official public syndication feeds. Feed presence is not a threat assessment.",
+  "schema_version": 2,
+  "description": "Official public-source registry. Only verified RSS or Atom feeds are enabled for collection; page indexes remain manual-only and pending sources have no configured endpoint.",
+  "sources": [
+    {
+      "id": "cisa",
+      "publisher": "Cybersecurity and Infrastructure Security Agency",
+      "title": "CISA public updates",
+      "scope": "Cybersecurity advisories and agency news",
+      "status": "verified",
+      "interface": "rss_or_atom",
+      "official_page": "https://www.cisa.gov/",
+      "last_reviewed": "2026-11-10",
+      "verified_on": "2026-11-10",
+      "verification_note": "Both endpoints returned RSS XML over HTTPS to a PowerShell probe. Python urllib received HTTP 403 from these URLs in this environment; GitHub Actions reachability remains unverified.",
+      "feed_ids": [
+        "cisa_all_advisories",
+        "cisa_news"
+      ]
+    },
+    {
+      "id": "fbi",
+      "publisher": "Federal Bureau of Investigation",
+      "title": "FBI National Press Releases",
+      "scope": "National FBI press releases",
+      "status": "verified",
+      "interface": "rss_or_atom",
+      "official_page": "https://www.fbi.gov/feeds/national-press-releases",
+      "last_reviewed": "2026-11-10",
+      "verified_on": "2026-11-10",
+      "verification_note": "The official feed directory lists RSS 1.0, RSS 2.0, and Atom. The configured Atom endpoint returned linked entries that the collector parsed.",
+      "feed_ids": [
+        "fbi_national_press_releases"
+      ]
+    },
+    {
+      "id": "odni",
+      "publisher": "Office of the Director of National Intelligence",
+      "title": "ODNI Newsroom",
+      "scope": "Press releases, reports, remarks, and interviews",
+      "status": "manual_only",
+      "interface": "web_index",
+      "official_page": "https://www.odni.gov/newsroom/",
+      "last_reviewed": "2026-11-10",
+      "verified_on": "2026-11-10",
+      "verification_note": "The current official newsroom lists dated publications. No RSS or documented public API was confirmed.",
+      "feed_ids": []
+    },
+    {
+      "id": "doe",
+      "publisher": "U.S. Department of Energy",
+      "title": "DOE Newsroom",
+      "scope": "Department-wide press releases, fact sheets, remarks, and other public updates",
+      "status": "manual_only",
+      "interface": "web_index",
+      "official_page": "https://www.energy.gov/newsroom",
+      "last_reviewed": "2026-11-10",
+      "verified_on": "2026-11-10",
+      "verification_note": "The department-wide newsroom is current and human-readable. DOE RSS pages found in this review were office-specific, so no narrower feed was substituted for a department-wide source.",
+      "feed_ids": []
+    },
+    {
+      "id": "fema",
+      "publisher": "Federal Emergency Management Agency",
+      "title": "FEMA public updates",
+      "scope": "Federal disaster and emergency-management notices",
+      "status": "pending",
+      "interface": "unverified",
+      "official_page": "https://www.fema.gov/",
+      "last_reviewed": "2026-11-10",
+      "verified_on": null,
+      "verification_note": "A stable current news feed or documented public interface could not be confirmed during this review. No endpoint is configured.",
+      "feed_ids": []
+    },
+    {
+      "id": "ohio_ema",
+      "publisher": "Ohio Emergency Management Agency",
+      "title": "Ohio EMA News",
+      "scope": "State emergency-management and preparedness news",
+      "status": "manual_only",
+      "interface": "web_index",
+      "official_page": "https://ema.ohio.gov/media-publications/news/news",
+      "last_reviewed": "2026-11-10",
+      "verified_on": "2026-11-10",
+      "verification_note": "The official EMA news index is current and human-readable. No RSS or documented public API was confirmed.",
+      "feed_ids": []
+    },
+    {
+      "id": "ohio_dps",
+      "publisher": "Ohio Department of Public Safety",
+      "title": "Ohio DPS News",
+      "scope": "State public-safety news and announcements",
+      "status": "manual_only",
+      "interface": "web_index",
+      "official_page": "https://publicsafety.ohio.gov/news-and-events",
+      "last_reviewed": "2026-11-10",
+      "verified_on": "2026-11-10",
+      "verification_note": "The official Department of Public Safety news and events index is current and human-readable. No RSS or documented public API was confirmed.",
+      "feed_ids": []
+    },
+    {
+      "id": "puco",
+      "publisher": "Public Utilities Commission of Ohio",
+      "title": "PUCO All News",
+      "scope": "Utility regulation, consumer notices, and commission news",
+      "status": "manual_only",
+      "interface": "web_index",
+      "official_page": "https://puco.ohio.gov/news",
+      "last_reviewed": "2026-11-10",
+      "verified_on": "2026-11-10",
+      "verification_note": "The official All News index is current and human-readable. Newsletter and email subscriptions are available, but no public RSS feed or API was confirmed.",
+      "feed_ids": []
+    },
+    {
+      "id": "franklin_county",
+      "publisher": "Franklin County, Ohio",
+      "title": "Franklin County News",
+      "scope": "County government and agency news indexes",
+      "status": "manual_only",
+      "interface": "web_index",
+      "official_page": "https://www.franklincountyohio.gov/County-Government/County-News",
+      "last_reviewed": "2026-11-10",
+      "verified_on": "2026-11-10",
+      "verification_note": "The official County News page links county and agency press rooms. No single county-wide RSS feed or documented API was confirmed.",
+      "feed_ids": []
+    },
+    {
+      "id": "columbus",
+      "publisher": "City of Columbus, Ohio",
+      "title": "Columbus News Articles",
+      "scope": "City government news and media releases",
+      "status": "manual_only",
+      "interface": "web_index",
+      "official_page": "https://www.columbus.gov/News-articles",
+      "last_reviewed": "2026-11-10",
+      "verified_on": "2026-11-10",
+      "verification_note": "The official city news index is current and human-readable. No RSS or documented public API was confirmed.",
+      "feed_ids": []
+    },
+    {
+      "id": "grove_city",
+      "publisher": "City of Grove City, Ohio",
+      "title": "Grove City News Flash",
+      "scope": "Official News Flash notices across city departments",
+      "status": "verified",
+      "interface": "rss",
+      "official_page": "https://www.grovecityohio.gov/rss.aspx",
+      "last_reviewed": "2026-11-10",
+      "verified_on": "2026-11-10",
+      "verification_note": "The city RSS directory documents News Flash feeds; the All News Flash link returned RSS XML over HTTPS.",
+      "feed_ids": [
+        "grove_city_news_flash"
+      ]
+    }
+  ],
   "feeds": [
     {
       "id": "cisa_all_advisories",
+      "source_id": "cisa",
       "publisher": "Cybersecurity and Infrastructure Security Agency",
       "title": "CISA Cybersecurity Advisories",
       "url": "https://www.cisa.gov/cybersecurity-advisories/all.xml",
+      "format": "rss",
       "scope": "Cybersecurity advisories, alerts, and bulletins",
       "official_directory": "https://www.cisa.gov/news-events/cybersecurity-advisories",
+      "verified_on": "2026-11-10",
       "enabled": true
     },
     {
       "id": "cisa_news",
+      "source_id": "cisa",
       "publisher": "Cybersecurity and Infrastructure Security Agency",
       "title": "CISA News",
       "url": "https://www.cisa.gov/news.xml",
+      "format": "rss",
       "scope": "Agency announcements and news",
       "official_directory": "https://www.cisa.gov/",
+      "verified_on": "2026-11-10",
       "enabled": true
     },
     {
       "id": "fbi_national_press_releases",
+      "source_id": "fbi",
       "publisher": "Federal Bureau of Investigation",
       "title": "FBI National Press Releases",
-      "url": "https://www.fbi.gov/feeds/national-press-releases/rss.xml",
+      "url": "https://www.fbi.gov/feeds/national-press-releases/atom.xml",
+      "format": "atom",
       "scope": "National FBI press releases",
       "official_directory": "https://www.fbi.gov/feeds/national-press-releases",
+      "verified_on": "2026-11-10",
+      "enabled": true
+    },
+    {
+      "id": "grove_city_news_flash",
+      "source_id": "grove_city",
+      "publisher": "City of Grove City, Ohio",
+      "title": "Grove City News Flash",
+      "url": "https://www.grovecityohio.gov/RSSFeed.aspx?CID=All-newsflash.xml&ModID=1",
+      "format": "rss",
+      "scope": "Official News Flash notices across city departments",
+      "official_directory": "https://www.grovecityohio.gov/rss.aspx",
+      "verified_on": "2026-11-10",
       "enabled": true
     }
   ]

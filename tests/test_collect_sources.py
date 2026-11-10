@@ -57,6 +57,22 @@ class FeedParserTests(unittest.TestCase):
         self.assertEqual(records[0]["assessment_status"], "not_assessed")
         self.assertEqual(records[0]["evidence_grade"], "not_assigned")
 
+    @patch("scripts.collect_sources.MAX_FEED_BYTES", 10)
+    @patch("scripts.collect_sources.urllib.request.urlopen")
+    def test_oversized_feed_is_rejected_before_parsing(self, mocked_open):
+        response = io.BytesIO(b"x" * 11)
+        response.__enter__ = lambda self=response: self
+        response.__exit__ = lambda *args: False
+        mocked_open.return_value = response
+
+        with self.assertRaisesRegex(ValueError, "safety limit"):
+            fetch_feed({
+                "id": "test_feed",
+                "publisher": "Test Agency",
+                "title": "Test feed",
+                "url": "https://example.gov/feed.xml",
+            })
+
 
 if __name__ == "__main__":
     unittest.main()
