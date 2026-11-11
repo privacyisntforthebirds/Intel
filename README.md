@@ -24,7 +24,8 @@ A public-source, evidence-led observatory for tracking material risks to U.S. na
 - [Source registry](sources/SOURCE_REGISTRY.md) — prioritized official sources.
 - [Threat matrix](analysis/THREAT_MATRIX.md) — risk categories and assessment fields.
 - [Evidence ledger](evidence/EVIDENCE_LEDGER.md) — structured record of claims and evidence.
-- [Latest monitoring report](reports/2026-11-10-monitoring-baseline.md) — first verified public-source baseline.
+- [Latest monitoring report](reports/2026-11-11-monitoring-update.md) — run-to-run comparison and baseline correction.
+- [Initial monitoring baseline](reports/2026-11-10-monitoring-baseline.md) — first verified public-source baseline.
 - [Incident template](templates/INCIDENT_TEMPLATE.md) — repeatable incident documentation.
 - [Ohio monitoring](ohio/OHIO_MONITORING.md) — state and local source plan.
 - [Preparedness](preparedness/PREPAREDNESS.md) — practical, proportionate household guidance.
