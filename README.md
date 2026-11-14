@@ -24,8 +24,9 @@ A public-source, evidence-led observatory for tracking material risks to U.S. na
 - [Source registry](sources/SOURCE_REGISTRY.md) — prioritized official sources.
 - [Threat matrix](analysis/THREAT_MATRIX.md) — risk categories and assessment fields.
 - [Evidence ledger](evidence/EVIDENCE_LEDGER.md) — structured record of claims and evidence.
-- [Latest monitoring report](reports/2026-11-13-monitoring-update.md) — Microsoft 365 service disruption and grid-reliability baseline correction.
-- [Previous monitoring update](reports/2026-11-12-monitoring-update.md).
+- [Latest monitoring report](reports/2026-11-14-monitoring-update.md) — FAA nationwide ground stop and Microsoft 365 restoration update.
+- [Previous monitoring update](reports/2026-11-13-monitoring-update.md).
+- [November 12 monitoring update](reports/2026-11-12-monitoring-update.md).
 - [November 11 monitoring update](reports/2026-11-11-monitoring-update.md).
 - [Initial monitoring baseline](reports/2026-11-10-monitoring-baseline.md).
 - [Incident template](templates/INCIDENT_TEMPLATE.md) — repeatable incident documentation.
