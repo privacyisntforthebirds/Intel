@@ -8,7 +8,7 @@ The financial-sector expansion produced three distinct findings that must not be
 2. **Visa third-party incident:** Visa told Cybernews that an incident involved a third-party service provider in the Asia-Pacific region. Visa said its own systems were not involved or impacted and that there was no indication payment data such as card numbers had been affected. The provider was not named, and Visa did not publicly attribute the incident to n0n.
 3. **JPMorgan transaction outage:** JPMorgan confirmed that a software bug in on-premise hardware slowed some transactions on November 16. The bank said there was no evidence the issue was cyber-related. It reported normal processing again Monday evening, and on November 17 said services were back to normal. The outage is separate from the extortion allegation unless evidence later establishes a connection.
 
-No verified evidence reviewed today establishes compromise of card authorization networks, Fedwire, FedNow, ACH, or the Zelle network itself. The Federal Reserve Financial Services live status page showed its listed services in normal operation at the time checked.
+No verified evidence reviewed today establishes compromise of card authorization networks, Fedwire, FedNow, ACH, or the Zelle network itself. The Federal Reserve's official service-status page was accessible, but its embedded live-status content was not exposed to this review; a third-party status monitor reported Fedwire Funds up at 12:03 UTC on November 17. That secondary signal is not an official all-clear, so current Federal Reserve rail status remains incompletely verified.
 
 **Overall national-security assessment:** localized and sector-specific disruption risk; persistent broader cyber concern; no evidence of imminent nationwide danger.
 
@@ -86,9 +86,7 @@ These figures are Visa's own monitoring and measurement. They support the import
 
 ## 4. Federal payment-system status and other operational checks
 
-The Federal Reserve Financial Services live status page showed normal operation for FedACH, FedNow, Fedwire Funds, Fedwire Securities, National Settlement, Account Services, and the listed access services at the time checked on November 17.
-
-A third-party outage-monitoring service displayed historical Federal Reserve degradation entries from earlier dates. Because a retained underlying Federal Reserve incident notice for those historical entries was not verified in this pass, they are not elevated here as confirmed new incidents. The current official status snapshot is not proof that no earlier or institution-specific issue occurred.
+The Federal Reserve Financial Services official service-status page was checked, but its embedded live-status data was not readable through the available public page view. StatusGator reported Fedwire Funds as up at 12:03 UTC on November 17, but this is a third-party status signal rather than a Federal Reserve incident statement. I did not locate a primary Federal Reserve notice confirming a current outage or a full all-services status. Historical third-party outage entries were not elevated to confirmed incidents because a retained underlying Federal Reserve notice was not verified. Current rail status is therefore incompletely verified; absence of a primary incident notice is not an all-clear.
 
 No additional newly confirmed bank, credit-union, processor, card-network, core-banking, or identity-provider incident was established from the public sources reviewed today. Public FS-ISAC member intelligence is not available through this public-source review; only public FS-ISAC material is in scope.
 
@@ -115,7 +113,7 @@ Third-party dependencies and payment-data exposure are genuine sector-wide resil
 
 ### Evidence of imminent danger — not established
 
-No verified public evidence reviewed today establishes an imminent nationwide financial-system attack or payment-rail failure with a specific timeframe. The current Federal Reserve service-status snapshot was normal.
+No verified public evidence reviewed today establishes an imminent nationwide financial-system attack or payment-rail failure with a specific timeframe. The current Federal Reserve service-status data was not independently readable in this pass; no primary rail outage notice was verified.
 
 ## 7. Collection limitations and next verification points
 
@@ -142,6 +140,7 @@ Next checks: any named Visa provider disclosure; company statements or regulator
 10. [Early Warning Services newsroom](https://www.earlywarning.com/newsroom)
 11. [Visa Fall 2026 Biannual Threats Report announcement, November 17](https://investor.visa.com/news/news-details/2026/Visa-Report-AI-Enabled-Fraud-and-Third-Party-Attacks-Are-Scaling-Worldwide/default.aspx)
 12. [Visa Fall 2026 Biannual Threats Report PDF](https://corporate.visa.com/content/dam/VCOM/corporate/visa-perspectives/newsroom/documents/visa-fall-biannual-threats-report-2026.pdf)
-13. [Federal Reserve Financial Services live status](https://www.frbservices.org/service-status/)
-14. [DOE 2026 emergency-order registry](https://www.energy.gov/ceser/2026-doe-202c-orders)
-15. [House Homeland Security November 18 hearing](https://homeland.house.gov/hearing/worldwide-threats-to-the-homeland-25-years-after-9-11/)
+13. [Federal Reserve Financial Services official service-status page](https://www.frbservices.org/service-status/)
+14. [StatusGator Fedwire Funds status — secondary status signal only](https://statusgator.com/services/federal-reserve/fedwire-funds)
+15. [DOE 2026 emergency-order registry](https://www.energy.gov/ceser/2026-doe-202c-orders)
+16. [House Homeland Security November 18 hearing](https://homeland.house.gov/hearing/worldwide-threats-to-the-homeland-25-years-after-9-11/)
