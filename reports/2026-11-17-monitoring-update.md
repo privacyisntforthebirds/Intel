@@ -20,7 +20,7 @@ Hackmanac's November 16 public alert says n0n claims to have stolen sensitive cu
 
 The claim's observation/publication date is November 16, 2026. **The date of any alleged intrusion is unknown.** Neither the Hackmanac alert nor the public reporting provides a verified compromise window or a quantified dataset.
 
-ZeroFox's November 16 profile describes n0n as a financially motivated extortion collective first observed in September 2026, with country of origin unknown. That is actor-level background and does not establish the truth of this particular claim or attribute it to a state.
+SOCRadar's public n0n profile, updated November 17, describes the group as a data-exfiltration and destructive-extortion operation that surfaced in September 2026 and appears financially motivated. Its victim counts are based on group listings; this actor-level background does not establish the truth of the current three-company claim or attribute it to a state.
 
 ### Organization-by-organization status
 
@@ -59,7 +59,7 @@ If the contact or reservation data were genuine, plausible consumer consequences
 ## 2. JPMorgan Chase transaction-processing disruption
 
 - **Event date:** November 16, 2026. The bank described the issue as occurring Monday; exact start and end times were not disclosed in the public statements reviewed.
-- **Publication:** JPMorgan's statement was reported by Reuters and AP on November 16. Business Insider reported the bank's restoration update on November 17.
+- **Publication:** JPMorgan's statement was reported by Reuters and AP on November 16. Business Insider reported the bank's restoration update on November 17. The JPMorgan Form 8-K located in EDGAR on November 17 concerned a CFO succession and was not a cybersecurity incident disclosure; that filing does not resolve the separate extortion allegation.
 - **Affected service:** JPMorgan transaction processing and some customer-facing online banking functions.
 - **Cause stated by the bank:** A temporary software bug in on-premise hardware systems. JPMorgan said there was no evidence the issue was cyber-related.
 - **Customer impact:** Some transactions took longer than usual; customers reported difficulty accessing online banking. JPMorgan said customers retained access to their accounts and funds.
@@ -134,13 +134,13 @@ Next checks: any named Visa provider disclosure; company statements or regulator
 2. [Cybernews: Visa and JPMorgan n0n claims; Visa spokesperson response](https://cybernews.com/security/visa-jpmorgan-data-breach/)
 3. [SOCRadar — JPMorgan claim record](https://socradar.io/free-tools/ransomware-intelligence/victims/jpmorgan-chase-co-n0n-f760b681)
 4. [SOCRadar — Mastercard claim record](https://socradar.io/free-tools/ransomware-intelligence/victims/mastercard-n0n-6592c874)
-5. [ZeroFox — n0n threat-actor profile, November 16](https://www.zerofox.com/intelligence/profile-n0n/)
-6. [Reuters — JPMorgan transaction issue, November 16](https://www.reuters.com/legal/transactional/downdetector-reports-outages-major-us-banks-2026-11-16/)
+5. [SOCRadar — public n0n threat-actor profile, updated November 17](https://socradar.io/blog/dark-web-profile-n0n-ransomware/)
+6. [Reuters — JPMorgan transaction issue, November 16](https://www.investing.com/news/stock-market-news/downdetector-reports-outages-major-us-banks-5030747)
 7. [Associated Press — bank and Zelle service impacts, November 16](https://apnews.com/article/50fee2693c22f597fa6ca51a97ef2cda)
-8. [Business Insider — JPMorgan restoration update, November 17](https://www.businessinsider.com/chase-other-major-banks-hit-by-online-outages-2026-11)
+8. [Business Insider — JPMorgan restoration update, November 17](https://www.businessinsider.com/chase-other-major-banks-hit-by-online-outages-2026-11)\n11. [JPMorgan November 17 Form 8-K — CFO succession, not a cyber disclosure](https://www.sec.gov/Archives/edgar/data/19617/000001961726000407/jpm-20261117.htm)
 9. [Early Warning Services newsroom](https://www.earlywarning.com/newsroom)
 10. [Visa Fall 2026 Biannual Threats Report announcement, November 17](https://investor.visa.com/news/news-details/2026/Visa-Report-AI-Enabled-Fraud-and-Third-Party-Attacks-Are-Scaling-Worldwide/default.aspx)
-11. [Visa Fall 2026 Biannual Threats Report PDF](https://corporate.visa.com/content/dam/VCOM/corporate/visa-perspectives/newsroom/documents/visa-fall-biannual-threats-report-2026.pdf)
-12. [Federal Reserve Financial Services live status](https://www.frbservices.org/service-status/)
-13. [DOE 2026 emergency-order registry](https://www.energy.gov/ceser/2026-doe-202c-orders)
-14. [House Homeland Security November 18 hearing](https://homeland.house.gov/hearing/worldwide-threats-to-the-homeland-25-years-after-9-11/)
+12. [Visa Fall 2026 Biannual Threats Report PDF](https://corporate.visa.com/content/dam/VCOM/corporate/visa-perspectives/newsroom/documents/visa-fall-biannual-threats-report-2026.pdf)
+13. [Federal Reserve Financial Services live status](https://www.frbservices.org/service-status/)
+14. [DOE 2026 emergency-order registry](https://www.energy.gov/ceser/2026-doe-202c-orders)
+15. [House Homeland Security November 18 hearing](https://homeland.house.gov/hearing/worldwide-threats-to-the-homeland-25-years-after-9-11/)
